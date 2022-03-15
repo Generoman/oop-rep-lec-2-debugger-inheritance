@@ -1,4 +1,4 @@
-package inheritance.second;
+package inheritance.interfaces;
 
 public class GameCollection implements HasCategories {
 

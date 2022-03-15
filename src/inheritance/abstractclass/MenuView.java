@@ -1,4 +1,4 @@
-package inheritance.first;
+package inheritance.abstractclass;
 
 public abstract class MenuView {
 
@@ -34,7 +34,6 @@ public abstract class MenuView {
     };
 
 
-
     // METHODS
 
     public void showMenu() {
@@ -54,6 +53,6 @@ public abstract class MenuView {
         }
     }
 
-    // Alle klasser som arver fra MenuView må implementere denne metoden, siden den er abstrakt
+    // Alle klasser som arver fra MenuView MÅ implementere denne metoden, siden den er abstrakt
     public abstract void showDevice();
 }

@@ -1,4 +1,4 @@
-package inheritance.first;
+package inheritance.abstractclass;
 
 public class MobileMenuView extends MenuView {
 

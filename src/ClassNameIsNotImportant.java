@@ -1,11 +1,11 @@
 import debug.DebuggerPractice;
-import inheritance.first.ComputerMenuView;
-import inheritance.first.MobileMenuView;
-import inheritance.first.TabletMenuView;
-import inheritance.second.BookCollection;
-import inheritance.second.GameCollection;
-import inheritance.second.HasCategories;
-import inheritance.second.MovieCollection;
+import inheritance.abstractclass.ComputerMenuView;
+import inheritance.abstractclass.MobileMenuView;
+import inheritance.abstractclass.TabletMenuView;
+import inheritance.interfaces.BookCollection;
+import inheritance.interfaces.GameCollection;
+import inheritance.interfaces.HasCategories;
+import inheritance.interfaces.MovieCollection;
 
 public class ClassNameIsNotImportant {
 
@@ -28,7 +28,6 @@ public class ClassNameIsNotImportant {
         System.out.println("Our string is now " + debugP.getOurString());
 
 
-
         // Arv-del:
 
         ComputerMenuView pcView = new ComputerMenuView();
@@ -47,7 +46,6 @@ public class ClassNameIsNotImportant {
 
         mobileView.showDevice();
         mobileView.showMenu();
-
 
 
         // Interface-del:
