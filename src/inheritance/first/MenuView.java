@@ -1,8 +1,8 @@
 package inheritance.first;
 
-import java.util.ArrayList;
-
 public abstract class MenuView {
+
+    // FIELDS
 
     protected int numberOfColumns;
     protected int numberOfRows;
@@ -33,13 +33,9 @@ public abstract class MenuView {
             "x-ray"
     };
 
-    public double getNumberOfColumns() {
-        return numberOfColumns;
-    }
 
-    public double getNumberOfRows() {
-        return numberOfRows;
-    }
+
+    // METHODS
 
     public void showMenu() {
 
@@ -57,4 +53,7 @@ public abstract class MenuView {
             System.out.println(row);
         }
     }
+
+    // Alle klasser som arver fra MenuView må implementere denne metoden, siden den er abstrakt
+    public abstract void showDevice();
 }
