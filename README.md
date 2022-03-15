@@ -1,0 +1,1 @@
+Eksempelkoden er ikke ferdig kommentert, og det mangler ordliste. Dette vil gjøres klart senest etter forelesningen
