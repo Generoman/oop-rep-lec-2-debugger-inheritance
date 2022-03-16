@@ -1,11 +1,6 @@
 import debug.DebuggerPractice;
-import inheritance.abstractclass.ComputerMenuView;
-import inheritance.abstractclass.MobileMenuView;
-import inheritance.abstractclass.TabletMenuView;
-import inheritance.interfaces.BookCollection;
-import inheritance.interfaces.GameCollection;
-import inheritance.interfaces.HasGenres;
-import inheritance.interfaces.MovieCollection;
+import inheritance.abstractclass.*;
+import inheritance.interfaces.*;
 
 public class ClassNameIsNotImportant {
 
@@ -55,10 +50,12 @@ public class ClassNameIsNotImportant {
 
         pcView.showDevice();
         pcView.showMenu();
+
         System.out.println("\n");
 
         tabletView.showDevice();
         tabletView.showMenu();
+
         System.out.println("\n");
 
         mobileView.showDevice();
@@ -81,11 +78,11 @@ public class ClassNameIsNotImportant {
             // Tom linje for lesbarhet
             System.out.println();
 
-            // Kjører showGenres-metoden på hver "ting" (element) i collections-arrayet
+            // Kjører showGenres-metoden på hver "ting" i collections-arrayet
             thing.showGenres();
         }
 
-        // Samme kode som foreach-loopen, bare som en fori-loop
+        // Samme funksjonalitet som foreach-loopen, bare som en fori-loop
 //        for (int i = 0; i < collections.length; i++) {
 //            System.out.println();
 //            collections[i].showGenres();

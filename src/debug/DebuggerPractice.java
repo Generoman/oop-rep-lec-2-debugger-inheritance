@@ -48,6 +48,7 @@ public class DebuggerPractice {
     // Riktig kode for begge metoder:
     // Merk av all utkommentert kode, og trykk ctrl og /
     // (cmd og 7 på mac)
+    // Husk også å kommentere ut metodene med feil, ellers vil IntelliJ begynne å mase
 
 //    public void doubleOurInt() {
 //        ourInt = ourInt * 2;

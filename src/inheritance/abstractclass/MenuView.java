@@ -33,7 +33,7 @@ public abstract class MenuView {
             "x-ray"
     };
 
-    // Legg merke til at denne klassen ikke har en konstruktør. Jeg har valgt å gjøre det siden den er
+    // Legg merke til at denne klassen ikke har en konstruktør. Jeg har valgt å ikke lage det siden klassen er
     // abstrakt, og vi aldri skal opprette et objekt av den.
 
 
@@ -52,11 +52,12 @@ public abstract class MenuView {
         // som kjører så lenge i er mindre enn numberOfRows
         for (int i = 0; i < numberOfRows; i++) {
 
-            // På begynnelsen av hver gjennomkjøring av loopen, må vi ha en tom string å sette menyalternativene i
+            // På begynnelsen av hver gjennomkjøring av den ytre loopen, må vi ha en tom string å sette
+            // menyalternativene i
             String row = "";
 
             // Antallet menyalternativer på hver linje er bestemt av numberOfColumns.
-            // Derfor kjører denne loopen så lenge j er mindre enn numberOfColumns.
+            // Derfor kjører den indre loopen så lenge j er mindre enn numberOfColumns.
             // Legg merke til at vi må bruke j her, og ikke i. Dette er fordi i er definert i den ytre loopen,
             // og kan ikke brukes igjen i den indre.
             for (int j = 0; j < numberOfColumns; j++) {
@@ -78,7 +79,7 @@ public abstract class MenuView {
     // Alle klasser som arver fra MenuView MÅ implementere denne metoden, siden den er abstrakt
     public abstract void showDevice();
 
-    // Siden alle klasser arver fra Object-klassen (trykk på den lille blå O-en ved siden av "public String toString()
+    // Siden alle klasser arver fra Object-klassen (trykk på den lille blå O-en til venstre for "public String toString()
     // for å se), må vi bruke annotasjonen @Override for å vise av vi lager en egen versjon av denne metoden.
     // @Override trenger ikke å være der, men det er best practice, for å kunne vise andre (eller seg selv i fremtiden)
     // at dette er en metode som fins i overklassen, som vi har laget en egen versjon av.
