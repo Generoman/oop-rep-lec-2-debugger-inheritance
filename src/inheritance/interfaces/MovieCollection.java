@@ -1,7 +1,8 @@
 package inheritance.interfaces;
 
-public class MovieCollection implements HasCategories {
+public class MovieCollection implements HasGenres {
 
+    // Denne klassens implementasjon av showGenres-metoden
     @Override
     public void showGenres() {
         System.out.println("Action");

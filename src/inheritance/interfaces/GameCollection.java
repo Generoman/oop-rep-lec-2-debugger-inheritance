@@ -1,7 +1,8 @@
 package inheritance.interfaces;
 
-public class GameCollection implements HasCategories {
+public class GameCollection implements HasGenres {
 
+    // Denne klassens implementasjon av showGenres-metoden
     @Override
     public void showGenres() {
         System.out.println("FPS");
